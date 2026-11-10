@@ -1,0 +1,45 @@
+{
+  "name": "docker-mcp-sandbox",
+  "version": "1.0.0",
+  "description": "Containerized Multi-Agent Development & Orchestration Environment built with Model Context Protocol (MCP)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test:client": "tsx scripts/test-client.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedailyhub31-blip/docker-mcp-sandbox.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "docker",
+    "multi-agent",
+    "sandbox",
+    "ai-agents",
+    "agentic-ai",
+    "code-execution",
+    "developer-tools"
+  ],
+  "author": "thedailyhub31-blip",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "dockerode": "^4.0.4",
+    "tar-stream": "^3.1.7",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.34",
+    "@types/node": "^22.13.9",
+    "@types/tar-stream": "^3.1.3",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
